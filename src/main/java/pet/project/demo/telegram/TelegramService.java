@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pet.project.demo.telegram.client.TelegramClient;
 
+import java.io.IOException;
+
 @Service
 public class TelegramService {
 
@@ -16,7 +18,7 @@ public class TelegramService {
     }
 
     @PostConstruct
-    public void registerBot() {
+    public void registerBot() throws IOException {
         telegramClient.setWebhook();
     }
 }

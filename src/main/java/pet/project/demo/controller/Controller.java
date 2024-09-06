@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/telegram/bot")
 public class Controller {
     @PostMapping("/update")
-    public String profile(String update) {
+    public String profile(@RequestBody String update) {
         return "";
     }
 }

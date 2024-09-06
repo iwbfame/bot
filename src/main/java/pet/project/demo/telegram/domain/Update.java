@@ -1,4 +1,4 @@
-package petProject.demo.TelegramApi;
+package pet.project.demo.telegram.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
